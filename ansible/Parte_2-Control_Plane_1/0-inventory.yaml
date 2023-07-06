@@ -1,0 +1,50 @@
+[control_planes]
+192.168.56.110 hostname=ServerDebian1
+192.168.56.120 hostname=ServerDebian2
+
+[worker_nodes]
+192.168.56.130 hostname=servercentos3
+
+[rabbitmq]
+192.168.56.103 hostname=node3
+
+[postgresql]
+192.168.56.103 hostname=node3
+
+[elastic_kibana]
+192.168.56.103 hostname=node3
+
+[redis]
+15.236.209.94 hostname=ip-172-31-44-208
+
+[prometheus_grafana]
+192.168.56.103 hostname=node3
+
+#Config de acesso vagrant
+[controlplanes:vars]
+ansible_user=vagrant
+ansible_password=XXX
+
+[workernodes:vars]
+ansible_user=vagrant
+ansible_password=XXX
+
+[rabbitmq:vars]
+ansible_user=vagrant
+ansible_password=XXX
+
+[postgresql:vars]
+ansible_user=vagrant
+ansible_password=XXX
+
+[elastic_kibana:vars]
+ansible_user=vagrant
+ansible_password=XXX
+
+[redis:vars]
+ansible_user=ubunto
+ansible_password=XXX
+
+[prometheus_grafana:vars]
+ansible_user=vagrant
+ansible_password=XXX
