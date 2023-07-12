@@ -1,7 +1,0 @@
----
-- hosts: prometheus_grafana
-  become: true
-
-  roles:
-    - basic_software
-    - prometheus_grafana
