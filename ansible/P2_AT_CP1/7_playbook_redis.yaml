@@ -1,7 +1,0 @@
----
-- hosts: redis
-  become: true
-
-  roles:
-    - basic_software
-    - redis

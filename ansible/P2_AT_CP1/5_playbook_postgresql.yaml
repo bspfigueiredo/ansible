@@ -1,7 +1,0 @@
----
-- hosts: postgresql
-  become: true
-
-  roles:
-    - basic_software
-    - postgresql
