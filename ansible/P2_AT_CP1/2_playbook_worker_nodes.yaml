@@ -1,0 +1,7 @@
+---
+- hosts: worker_nodes
+  become: true
+
+  roles:
+    - basic_software
+    - worker_nodes
