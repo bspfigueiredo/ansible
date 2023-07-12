@@ -1,0 +1,7 @@
+---
+- hosts: rabittmq
+  become: true
+
+  roles:
+    - basic_software
+    - rabittmq

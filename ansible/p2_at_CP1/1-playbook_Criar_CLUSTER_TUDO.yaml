@@ -1,0 +1,50 @@
+---
+- hosts: worker_nodes
+  become: true
+
+  roles:
+    - basic_software
+    - worker_nodes
+---
+- hosts: control_planes
+  become: true
+
+  roles:
+    - basic_software
+    - worker_nodes
+    - control_plane
+---
+- hosts: rabittmq
+  become: true
+
+  roles:
+    - basic_software
+    - rabittmq
+---
+- hosts: postgresql
+  become: true
+
+  roles:
+    - basic_software
+    - postgresql
+---
+- hosts: elastic_kibana
+  become: true
+
+  roles:
+    - basic_software
+    - elastic_kibana
+---
+- hosts: redis
+  become: true
+
+  roles:
+    - basic_software
+    - redis
+---
+- hosts: prometheus_grafana
+  become: true
+
+  roles:
+    - basic_software
+    - prometheus_grafana
