@@ -1,0 +1,11 @@
+---
+# handlers file for nodes
+
+- name: addInHostsFile
+  lineinfile:
+    path: /etc/hosts
+    line: "{{ item }}"
+  with_items: 
+    - "127.0.0.1 {{ hostname }}"
+    - "{{inventory_hostname}} {{ hostname }}" #inventory_hostname é o ip que esta no inventario
+

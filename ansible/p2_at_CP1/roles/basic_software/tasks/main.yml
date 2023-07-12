@@ -1,0 +1,5 @@
+---
+# tasks file for basic_software
+- name: Install CURL, VIM, IPTABLES, TREE, RESOLVCONF
+  shell:
+    cmd: "apt install curl vim iptables tree resolvconf -y"
