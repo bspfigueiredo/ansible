@@ -1,7 +1,0 @@
----
-- hosts: elastic_kibana
-  become: true
-
-  roles:
-    - basic_software
-    - elastic_kibana
